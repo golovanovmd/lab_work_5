@@ -77,7 +77,13 @@ TEST(t3, one) {
   test.ChangeBalance(100);
   
 }
-
+TEST(t5, test2) {
+  MAccount rl2;
+  EXPECT_CALL(rl2, Lock()).Times(AtLeast(2));
+  rl2.Lock();
+  rl2.Lock();
+  
+}
 
 
 TEST(t4, two) {
