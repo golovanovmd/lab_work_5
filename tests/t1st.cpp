@@ -78,7 +78,7 @@ TEST(t3, one) {
   
 }
 TEST(t5, test2) {
-  MAccount rl2;
+  MAccount rl2(2, 300);
   EXPECT_CALL(rl2, Lock()).Times(AtLeast(2));
   rl2.Lock();
   rl2.Lock();
